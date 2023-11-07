@@ -1,8 +1,25 @@
-let games = document.getElementById("textarea").value;
+$(document).ready(function () {
+    $('.js-example-basic-multiple').select2();
+});
 
-document.getElementById('start').addEventListener('click', function() {
-    let allGames = textarea.value.split("\n");
+let selected = [];
 
-    let result = allGames[Math.floor(Math.random() * allGames.length)]
-    chosen.innerHTML = result;
+$(document).ready(function() {
+    $('.js-example-basic-multiple').on('change', function() {
+        selected = $(this).val();
+        if (selected.includes('all')) {
+            selected = $(this).children('option:not(:first)').map(function() {
+                return this.value;
+            }).get();
+        }
+        console.log(selected);
+    });
+});
+
+document.getElementById('start').addEventListener('click', function () {
+    if (selected.length > 0) {
+        let randomIndex = Math.floor(Math.random() * selected.length);
+        let result = selected[randomIndex];
+        chosen.innerHTML = result;
+    } 
 });

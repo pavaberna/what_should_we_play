@@ -24,6 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 30px;
 }
 
 .btn{
@@ -62,10 +63,13 @@ body {
 }
 
 .chosenbox {
-    border: 2px solid black;
     border-radius: 20px;
     font-size: 28px;
     margin-bottom: 80px;
     padding: 0px 20px;
     text-align: center;
+}
+
+.js-example-basic-multiple{
+    width: 200px !important;
 }

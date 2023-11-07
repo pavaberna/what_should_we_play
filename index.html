@@ -2,12 +2,18 @@
 <html lang="en">
 
 <head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
 
     <title>Document</title>
 </head>
@@ -19,8 +25,20 @@
 
     <div class="box">
         <div class="question">What should we play today?</div>
-        <div class="input"><textarea rows="4" id="textarea" placeholder="Játékok neve vesszővel elválasztva"></textarea>
-        </div>
+        <select class="js-example-basic-multiple" id="select" name="states[]" multiple="multiple">
+            <option value="all">all</option>
+            <option value="Robbanó cicák">Robbanó cicák</option>
+            <option value="A tiltott sivatag">A tiltott sivatag</option>
+            <option value="Avalon">Avalon</option>
+            <option value="Munchkin">Munchkin</option>
+            <option value="Bang">Bang</option>
+            <option value="Carcassone">Carcassone</option>
+            <option value="What do you meme?-családi">What do you meme?-családi</option>
+            <option value="What do you meme?-kemény">What do you meme?-kemény</option>
+            <option value="Francia kártya">Francia kártya</option>
+            <option value="Fedőnevek">Fedőnevek</option>
+            <option value="Dűne">Dűne</option>
+        </select>
         <div class="btn"><button id="start">start</button></div>
     </div>
     <script src="script.js"></script>
