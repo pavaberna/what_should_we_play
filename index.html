@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
@@ -14,10 +13,17 @@
 </head>
 
 <body>
+    <div class="chosenbox">
+        <p id="chosen"></p>
+    </div>
+
     <div class="box">
         <div class="question">What should we play today?</div>
-        <div class="btn"><button>start</button></div>
+        <div class="input"><textarea rows="4" id="textarea" placeholder="Játékok neve vesszővel elválasztva"></textarea>
+        </div>
+        <div class="btn"><button id="start">start</button></div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

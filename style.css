@@ -9,6 +9,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     height: 100vh;
     max-width: 100%;
@@ -18,28 +19,53 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 15px;
     width: 300px;
-    height: 200px;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .btn{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    height: 100px;
 }
 
 .question{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     text-align: center;
-    height: 100px;
+
     font-size: 20px;       
 }
 
-button {
-    background-color: aqua;
+#start {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
     padding: 10px 24px;
     font-size: 18px;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px 0px;
+}
+
+#textarea {
+    border: 2px solid black;
+}
+
+.chosenbox {
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 28px;
+    margin-bottom: 80px;
+    padding: 0px 20px;
+    text-align: center;
 }
