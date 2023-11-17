@@ -23,3 +23,4 @@ document.getElementById('start').addEventListener('click', function () {
         chosen.innerHTML = result;
     } 
 });
+

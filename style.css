@@ -10,21 +10,21 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     height: 100vh;
     max-width: 100%;
 }
 
 .box {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 15px;
-    width: 300px;
-    padding: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    width: 400px;
+    margin-bottom: 100px;
+    padding: 20px 0px;
+    gap: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
 }
 
 .btn{
@@ -63,11 +63,11 @@ body {
 }
 
 .chosenbox {
+    text-align: center;
     border-radius: 20px;
     font-size: 28px;
     margin-bottom: 80px;
     padding: 0px 20px;
-    text-align: center;
 }
 
 .js-example-basic-multiple{
